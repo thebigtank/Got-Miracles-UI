@@ -1,0 +1,431 @@
+.wrapper {
+  background-color: #636363;
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.wrapper img {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -10px;
+  height: 65em;
+}
+
+.wrapper .circle-outer {
+  height: 1700px;
+  width: 1700px;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -850px;
+  top: 50%;
+  margin-top: -850px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .circle-outer .circle-inner {
+  height: 800px;
+  width: 800px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: inherit;
+}
+
+.wrapper .landing {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: inset 0 0 300px black;
+  background: radial-gradient(circle, rgba(62, 62, 62, 0) 0%, black 100%);
+}
+
+.wrapper .landing aside {
+  height: 1000px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .landing aside .disc {
+  height: 80px;
+  background-color: #ee5454;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.wrapper .landing aside nav {
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+  padding: 4em 0;
+  box-sizing: border-box;
+}
+
+.wrapper .landing aside nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper .landing aside nav ul li {
+  color: #fff;
+  list-style: none;
+  position: relative;
+}
+
+.wrapper .landing aside nav ul .scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper .landing aside nav ul .scroll li:nth-child(2) {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  height: 100px;
+  top: 20px;
+}
+
+.wrapper .landing aside nav ul .scroll li:last-child {
+  font-family: 'Poppins', sans-serif;
+  font-size: .7em;
+  transform: rotate(-90deg);
+  top: 60px;
+}
+
+.wrapper .landing aside nav ul .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper .landing aside nav ul .social li {
+  margin-top: 50px;
+}
+
+.wrapper .landing aside nav ul .social li a {
+  color: #fff;
+}
+
+.wrapper .landing section {
+  width: 100%;
+}
+
+.wrapper .landing section header {
+  padding: 0px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.wrapper .landing section header h1 {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+}
+
+.wrapper .landing section header nav ul li {
+  float: left;
+  margin-left: 10em;
+}
+
+.wrapper .landing section header nav ul li a {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.wrapper .landing section .content {
+  position: relative;
+  width: inherit;
+  display: flex;
+  color: #fff;
+}
+
+.wrapper .landing section .content .features {
+  font-family: 'Mada', sans-serif;
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 80px;
+}
+
+.wrapper .landing section .content .features .feature {
+  width: 200px;
+  transform: rotate(-90deg);
+  transform-origin: bottom;
+}
+
+.wrapper .landing section .content .features .feature span {
+  display: block;
+  margin-bottom: 20px;
+  width: 20px;
+  height: 2px;
+  background-color: #ee5454;
+  position: absolute;
+  bottom: 50px;
+}
+
+.wrapper .landing section .content .features .feature .wrap {
+  overflow: hidden;
+}
+
+.wrapper .landing section .content .features .feature .wrap h1 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.wrapper .landing section .content .features .feature .wrap p {
+  font-size: 10px;
+  line-height: 1.5em;
+  color: #a8a8a8;
+}
+
+.wrapper .landing section .content .features .feature:nth-child(2) span {
+  height: 50px;
+}
+
+.wrapper .landing section .content .theme {
+  width: 40%;
+  margin-right: 150px;
+  position: relative;
+  bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .landing section .content .theme h2 {
+  text-transform: uppercase;
+  color: #ee5454;
+  font-size: 1.5em;
+  align-self: flex-start;
+  overflow: hidden;
+}
+
+.wrapper .landing section .content .theme h2 .wrap {
+  position: relative;
+}
+
+.wrapper .landing section .content .theme h2 .wrap span {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0 10px;
+  color: #fff;
+  position: relative;
+  top: 5px;
+}
+
+.wrapper .landing section .content .theme h1 {
+  text-transform: capitalize;
+  font-size: 14em;
+  font-weight: 200;
+  overflow: hidden;
+}
+
+.wrapper .landing section .content .theme h1 .wrap {
+  position: relative;
+}
+
+.wrapper .landing section .content .theme p {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 2.6em;
+  font-weight: 200;
+  padding: 2px 20px;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  display: flex;
+  align-self: flex-end;
+  overflow: hidden;
+}
+
+.wrapper .landing section .content .theme .bar {
+  width: 500px;
+  height: 5px;
+  background-color: #505050;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.wrapper .landing section .content .theme .bar:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ee5454;
+}
+
+.wrapper .landing section .content .extra {
+  width: 20%;
+  height: 1000px;
+  position: relative;
+}
+
+.wrapper .landing section .content .extra .half-num {
+  display: flex;
+  color: #ee5454;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  left: 70px;
+  overflow: hidden;
+}
+
+.wrapper .landing section .content .extra .half-num h1 {
+  font-size: 8em;
+  font-weight: 200;
+  color: #fff;
+  position: relative;
+  right: 38px;
+  font-family: 'Merriweather', serif;
+}
+
+.wrapper .landing section .content .extra .new-beginning {
+  position: absolute;
+  bottom: 280px;
+  display: flex;
+}
+
+.wrapper .landing section .content .extra .new-beginning .go {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: #ee5454;
+}
+
+.wrapper .landing section .content .extra .new-beginning .go span {
+  width: inherit;
+  height: inherit;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .landing section .content .extra .new-beginning .content {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Mada', sans-serif;
+}
+
+.wrapper .landing section .content .extra .new-beginning .content h4 {
+  font-size: 16px;
+  text-transform: capitalize;
+  position: relative;
+  bottom: 10px;
+}
+
+.wrapper .landing section .content .extra .new-beginning .content h4:before {
+  content: "";
+  display: block;
+  margin-bottom: 20px;
+  width: 30px;
+  height: 4px;
+  background-color: #ee5454;
+  position: absolute;
+  bottom: 10px;
+}
+
+.wrapper .landing section .content .extra .new-beginning .content p {
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #a8a8a8;
+}
+
+.wrapper .landing section .content .extra .scroll {
+  position: absolute;
+  bottom: 120px;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .landing section .content .extra .scroll .scroll-widget {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .landing section .content .extra .scroll .scroll-widget .circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  margin: 0 2px;
+}
+
+.wrapper .landing section .content .extra .scroll h3 {
+  font-family: 'Mada', sans-serif;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.wrapper .landing section .content .indicator {
+  position: absolute;
+  top: 40%;
+  right: 30px;
+}
+
+.wrapper .landing section .content .indicator ul li {
+  list-style: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.wrapper .landing section .content .indicator ul li span {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.wrapper .landing section .content .indicator ul li span:hover {
+  background-color: #ee5454;
+}
+
+.wrapper .landing section .content .indicator ul li span:hover:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  right: 8px;
+  bottom: 8px;
+}
+
+.wrap {
+  position: relative;
+}
